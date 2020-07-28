@@ -285,6 +285,23 @@ html {
     height: 20rem;
 }
 
+.contacts-submit {
+    width: 20%;
+    background-color: rgb(47, 47, 255);
+    border: 0px;
+    color: whitesmoke;
+    font-size: 150%;
+    padding: 1% 0;
+    border-radius: 10px;
+    font-size: 100%;
+    transition: ease-in-out 0.5s;
+}
+
+.contacts-submit:hover {
+    background-color: rgb(86, 86, 255);
+    transition: ease-in-out 0.5s;
+}
+
 .footer {
     margin: -2%;
     padding: 3% 0;
