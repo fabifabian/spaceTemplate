@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <title>Space - Template</title>
+</head>
+<body>
+    <div class="home-navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <button class='home-navbar-bar' id='barsBtn' onclick="openMenu()"><i class="fas fa-bars"></i></button>
+        <div class="home-navbar-mobile home-navbar-mobileHidden" id='navbarMobile'>
+            <button class='home-navbar-bar-X' id='exitBtn'><i class="fas fa-times" onclick="closeMenu()"></i></button>
+            <br><br><br>
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#features" onclick="closeMenu()">Features</a>
+            <a href="#aboutus" onclick="closeMenu()">About Us</a>
+            <a href="#contacts" onclick="closeMenu()">Contacts</a>
+        </div>
+        <a href='#home'><h1>Space</h1></a>
+    </div>
+    <div class="home" id='home'>
+        
+        <div class="home-content">
+            <h1>Title Here</h1>
+            <p>Write some interesting text here. It should be easy to understand and as short as possible. Putting some <a>links</a> could help the visitor navigate easier</p>
+        </div>
+        <div class="home-backgroundVideo">
+            <div class="video-background">
+                <div class="video-foreground">
+                  <iframe src="https://www.youtube.com/embed/KHPCyUJCPMc?autoplay=1&controls=0&loop=1&playlist=KHPCyUJCPMc" frameborder="0" allowfullscreen allow='autoplay'></iframe>
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+    <div class="projects" id="projects">
+        <div class="projects-title">
+            <h1>Projects</h1>
+            <p>Put some descprition here that represents your work. Show brands that you have partnered with if any</p>
+        </div>
+        <div class="projects-gallery">
+            <img src='images/1.jpg' class='gallery-image' />
+            <img src='images/2.jpg' class='gallery-image' />
+            <img src='images/3.jpg' class='gallery-image' />
+            <img src='images/4.jpg' class='gallery-image' />
+        </div>
+    </div>
+
+    <div class="features" id='features'>
+        <div class="features-title">
+            <h1>Features</h1>
+        </div>
+        
+        <div class="features-section">
+            <i class="fas fa-shipping-fast features-icon"></i>
+            <h1>Feature Here</h1>
+            <p>Describe your feature here. Explain why this feature is important on your business. Describe your feature here. Explain why this feature is important on your business. Describe your feature here. Explain why this feature is important on your business. </p>
+            <button>Go to...</button>
+        </div>
+        <div class="features-section">
+            <i class="fas fa-user-secret features-icon"></i>
+            <h1>Feature Here</h1>
+            <p>Describe your feature here. Explain why this feature is important on your business. Describe your feature here. Explain why this feature is important on your business. Describe your feature here. Explain why this feature is important on your business. </p>
+            <button>Go to...</button>
+        </div>
+        <div class="features-section">
+            <i class="far fa-clock features-icon"></i>
+            <h1>Feature Here</h1>
+            <p>Describe your feature here. Explain why this feature is important on your business. Describe your feature here. Explain why this feature is important on your business. Describe your feature here. Explain why this feature is important on your business. </p>
+            <button>Go to...</button>
+        </div>
+    </div>
+    <div class="aboutus" id="aboutus">
+        <div class="aboutus-title">
+            <h1>About Us</h1>
+        </div>
+        <div class="aboutus-content">
+            <div class="aboutus-image">
+                <img src="images/aboutUs-Images.png" />
+            </div>
+            <div class="aboutus-text">
+                <h2>Company Name</h2>
+                <p>Insert text that describes your bussiness. Put some links on where your costumers can find you easier. Explain what you do and why this is important. Write some acheivements you or your bussiness got</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="aboutus-social">
+            <a href='#'><i class="fab fa-instagram-square"></i></a>
+            <a href='#'><i class="fab fa-facebook-square"></i></a>
+            <a href='#'><i class="fab fa-twitter-square"></i></a>
+            <a href='#'><i class="fab fa-whatsapp-square"></i></a>
+            <a href='#'><i class="fab fa-snapchat-square"></i></a>
+        </div>
+    </div> 
+    <div class="contacts">
+        <h1>Contacts</h1>
+        <div class="contacts-form">
+        <form>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." class='contacts-textInput'>
+            <br><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." class='contacts-textInput'>
+            <br><br>
+            <label for="country">Country</label><br>
+            <input type="text" id="country" name="country" placeholder="Country" class='contacts-textInput'>
+            </select>
+            <br><br>
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" rows='10' placeholder="Write something.."class='contacts-textarea'></textarea>
+            <br><br>
+            <input type="submit" value="Submit"  class='contacts-submit'>
+        </form>  
+        </div>
+        <div class="contacts-address">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45017662.92968794!2d-73.53247190660178!3d-46.475240422348634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa4b9967b3390754b%3A0x6e52be1f740f2075!2sAntarctica!5e0!3m2!1sen!2s!4v1595953378204!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p>
+                Address goes here<br>
+                Number. 123<br>
+                Street "That Street"
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="footer" id="footer">
+        <div class="footer-left">
+            <div class="footer-left-text">
+                <img src='images/aboutUs-Images-White.png' width='50%' height='auto'/>
+                <p>Put something interesting like a slogan or a quote from a famous person<br><br>© 2020 Fabian Harizi. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h2>Links</h2>
+            <div class="footer-right-pages footer-links">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Snapchat</a></li>
+                </ul>
+            </div>
+            <div class="footer-right-social footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+    <script src="https://kit.fontawesome.com/59acf7c620.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
