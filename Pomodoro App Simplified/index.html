@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="overlay">
+        <h1 style="font-weight: 300;">Pomodoro Timer</h1>
+        <div id="overlay-buttons">
+            <img src="content/images/uiIcons/reset.svg" alt="" id="reset" class="overlay-button">
+            <img src="content/images/uiIcons/settings.svg" alt="" id="settings" class="overlay-button">
+        </div>
+    </div>
+    <div id="timer">
+        <div id="timer-content">
+            <h1 id='timerTitle'>25:00</h1>
+            <h6 id='timerState' style='font-style: italic;'>Start</h6>
+        </div>
+        <div id="timer-buttons">
+            <img src="content/images/uiIcons/start.svg" alt="" id="startSetup" class="timer-button">
+            <img src="content/images/uiIcons/play.svg" alt="" id="start" class="timer-button">
+            <img src="content/images/uiIcons/pause.svg" alt="" id="pause" class="timer-button">
+        </div>
+    </div>
+    <div id="settingswindow">
+        <div id="settings-close">
+            <h1>Settings</h1>
+            <img src="content/images/uiIcons/exit.svg" alt="" id="settingsClose">
+        </div><hr>
+        <div id="settings-timer" class='settingsContainer'>
+            <h3 style="font-weight: 400;">Timer</h3><br>
+            <div id="settings-timer-inputs">
+                <input type="number" id="workValue" placeholder="Work" value=''>
+                <input type="number" id="breakValue" placeholder="Break" value=''>
+            </div><br>
+            <h6 style='font-style: italic;font-weight: 300;' >*Timer will change after the round ends or if you reset it</h6>
+        </div><hr>
+        <div id="settings-sounds" class='settingsContainer'>
+            <h3>Sounds</h3>
+            <input type="checkbox" id="sounds" class='settingsCheckbox' checked>
+        </div><hr>
+        <div id="settings-themes">
+            <h1>Themes</h1><br>
+            <div id="settings-themes-types">
+                <div id="theme1" class="theme"></div>
+                <div id="theme2" class="theme"></div>
+                <div id="theme3" class="theme"></div>
+                <div id="theme4" class="theme"></div>
+            </div>
+        </div>
+        <div id="settings-credits">
+            <h2>Credits</h2><br>
+            <h4>App Icon: <a href="https://www.flaticon.com/free-icons/pomodoro">Pomodoro icons created by Flat Icons - Flaticon</a></h4>
+            <h4>UI Icons: <a href="https://fontawesome.com/license/free">FontAwesome</a></h4>
+        </div>
+    </div>
+    <div id="alert">
+        <h2>Are you sure you want to reset the timer?</h2><br>
+        <div id="alert-buttons">
+            <button id='yes'>Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+</body>
+</html> 

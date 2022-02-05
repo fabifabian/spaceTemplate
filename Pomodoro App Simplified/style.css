@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root{
+    --timerBgcolor: ;
+    --settingsBgcolor: ;
+    --fontcolor: ;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Roboto', Helvetica;
+}
+
+#timer{
+    text-align: center;
+    font-size: 250%;
+    background-color: var(--timerBgcolor);
+    color: var(--fontcolor);
+    padding: 10vh 0 0 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+#timer-content{
+    margin: 20vh 0;
+    height: 20vh;
+}
+
+#timer-buttons{
+    height: 30vh;
+}
+
+.timer-button{
+    margin: auto;
+    height: 8vh;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+    transition: 0.3s;
+}
+
+.timer-button button:hover{
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    transition: 0.3s;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--fontcolor);
+    font-size: 3vw;
+    height: 10vh;
+    padding: 2% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+.overlay-button{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    margin: 0 0 0 1vh;
+    height: 4vh;
+}
+
+
+#alert{
+    width: 70vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    box-shadow: 0 0 10px black;
+    font-size: 3vw;
+    padding: 5%;
+    position: fixed;
+    top: 30vh;
+    text-align: center;
+    margin: 0 15vw;
+    display: none;
+}
+
+#alert-buttons button{
+    font-size: 3vw;
+    margin: 0 5%;
+    width: 20%;
+}
+
+#settingswindow{
+    width: 80vw;
+    background-color: var(--settingsBgcolor);
+    box-shadow: 0 0 10px black;
+    color: var(--fontcolor);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: -90vw;
+    display: fixed;
+    transition: 0.5s ease-out;
+    z-index: 100;
+}
+
+#settings-close{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    font-weight: 300;
+    align-items: center;
+}
+
+#settingsClose{
+    height: 5vh;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.settingsContainer{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 150%;
+}
+
+.settingsCheckbox{
+    height: 2.5vh;
+    width: 2.5vh;
+}
+
+#settings-timer{
+    display: inline;
+    text-align: center;
+}
+
+#settings-timer-inputs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#settings-timer-inputs input{
+    width: 10vh;
+    height: 7vh;
+    text-align: center;
+    font-size: 3vh;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 0;
+    color: var(--fontcolor);
+}
+
+#settings-timer input::-webkit-outer-spin-button, #settings-timer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#settings-timer h6{
+    margin: 0 10%;
+}
+
+#settingswindow hr{
+    width: 75%;
+    margin: auto;
+    border-radius: 1em;
+}
+
+#settings-themes-types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#settings-themes{
+    font-size: 100%;
+    text-align: center;
+    padding: 5%;
+}
+
+#settings-credits a{
+    color: var(--fontcolor);
+    text-shadow: 0 0 1px black;
+}
+
+.theme{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    margin: 2%;
+    background-position: center;
+    background-size: cover;
+    border: 0;
+    transition: 0.1s;
+    box-shadow: 0 0 0 transparent;
+}
+.selected{
+    border: 3px solid var(--fontcolor);
+    transition: 0.1s;
+    box-shadow: 0 0 10px black;
+}
+#theme1{
+    background-image: url(content/images/theme1.png);
+}
+#theme2{
+    background-image: url(content/images/theme2.png);
+}
+#theme3{
+    background-image: url(content/images/theme3.png);
+}
+#theme4{
+    background-image: url(content/images/theme4.png);
+}
+
+#settings-credits{
+    padding: 5%;
+    position: absolute;
+    bottom: 0;
+    font-size: 80%;
+}
+
